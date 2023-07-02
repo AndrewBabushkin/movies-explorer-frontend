@@ -5,26 +5,30 @@ function Navigation({ isOpen, onClose, windowWidth }) {
   console.log(isOpen);
   console.log(onClose);
   return (
-    <section className={`navigation ${isOpen ? 'navigation_type_opened' : ''}`}>
-      {windowWidth >= 1280 ? (
+    <section className={`navigation ${isOpen ? 'navigation_opened' : ''}`}>
+      {windowWidth > 768 ? (
         ''
       ) : (
         <button className="navigation__btn-exit" onClick={onClose}></button>
       )}
 
       <nav className="navigation__list">
-        {windowWidth >= 1280 ? (
+        {windowWidth > 768 ? (
           ''
         ) : (
-          <NavLink to="/" className="navigation__link">
+          <NavLink to="/" className="navigation__link" onClick={onClose}>
             Главная
           </NavLink>
         )}
 
-        <NavLink to="/movies" className="navigation__link">
+        <NavLink to="/movies" className="navigation__link" onClick={onClose}>
           Фильмы
         </NavLink>
-        <NavLink to="/saved-movies" className="navigation__link">
+        <NavLink
+          to="/saved-movies"
+          className="navigation__link"
+          onClick={onClose}
+        >
           Сохранённые фильмы
         </NavLink>
       </nav>

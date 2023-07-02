@@ -36,6 +36,7 @@ function App() {
     window.addEventListener('resize', handleWindowSize);
   }, []);
 
+  console.log(windowWidth);
   return (
     <div className="App">
       {location.pathname === '/' ||
@@ -62,7 +63,7 @@ function App() {
       ) : (
         ''
       )}
-      {windowWidth >= 1280 ? (
+      {windowWidth > 768 ? (
         ''
       ) : (
         <Navigation isOpen={isOpenNavBar} onClose={closeAllPopups} />

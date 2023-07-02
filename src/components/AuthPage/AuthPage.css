@@ -12,6 +12,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto 50px auto;
+  transition: opacity 0.3s ease;
+}
+
+.auth-page__logo:hover {
+  opacity: 0.7;
 }
 
 .auth-page__title {

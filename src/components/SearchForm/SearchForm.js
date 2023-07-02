@@ -9,6 +9,7 @@ function SearchForm() {
           type="search"
           name="search-input"
           placeholder="Фильм"
+          required
         />
         <button className="search-form__bnt">Найти</button>
       </div>
@@ -19,7 +20,7 @@ function SearchForm() {
           name="checkbox"
           className="search-form__checkbox"
         />
-        <p className="search-form__inner">Короткометражки</p>
+        <span className="search-form__inner">Короткометражки</span>
       </label>
     </form>
   );

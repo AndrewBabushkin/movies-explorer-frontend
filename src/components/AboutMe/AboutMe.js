@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <section className="about-me">
       <Title title="Студент" attribute="conteiner_type_about-me" />
-      <article className="about-me__profile">
+      <div className="about-me__profile">
         <img
           src={avatarImg}
           alt="Фотография студента"
@@ -27,11 +27,12 @@ function AboutMe() {
           <a
             href="https://github.com/AndrewBabushkin"
             className="about-me__link"
+            target="_blank"
           >
             Github
           </a>
         </div>
-      </article>
+      </div>
 
       <div className="about-me__container">
         <h3 className="about-me__portfolio">Портфолио</h3>
@@ -40,6 +41,7 @@ function AboutMe() {
             <a
               href="https://github.com/AndrewBabushkin/how-to-learn"
               className="about-me__link about-me__link_type_portfolio"
+              target="_blank"
             >
               <p className="about-me__text">Статичный сайт</p>
               <div className="about-me__btn"></div>
@@ -49,6 +51,7 @@ function AboutMe() {
             <a
               href="https://andrewbabushkin.github.io/russian-travel/"
               className="about-me__link about-me__link_type_portfolio"
+              target="_blank"
             >
               <p className="about-me__text">Адаптивный сайт</p>
               <div className="about-me__btn"></div>
@@ -58,6 +61,7 @@ function AboutMe() {
             <a
               href="https://andrew.babushkin.nomoredomains.monster"
               className="about-me__link about-me__link_type_portfolio"
+              target="_blank"
             >
               <p className="about-me__text">Одностраничное приложение</p>
               <div className="about-me__btn"></div>

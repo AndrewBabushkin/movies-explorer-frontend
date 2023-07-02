@@ -1,6 +1,6 @@
 .navigation {
   position: fixed;
-  top: -841px;
+  top: -1000px;
   margin: 0 auto;
   height: 100vh;
   width: 100%;
@@ -11,7 +11,7 @@
   z-index: 5;
 }
 
-.navigation_type_opened {
+.navigation_opened {
   top: 0;
 }
 
@@ -108,7 +108,7 @@
     transition: right 0.4s linear;
   }
 
-  .navigation_type_opened {
+  .navigation_opened {
     right: 0;
   }
 
@@ -141,7 +141,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 769px) {
   .navigation {
     position: static;
     margin: 0;
@@ -154,7 +154,7 @@
     z-index: 5;
   }
 
-  .navigation_type_opened {
+  .navigation_opened {
     top: 0;
   }
 

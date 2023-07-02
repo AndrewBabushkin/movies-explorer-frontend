@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import './Header.css';
 import BurgerNavigation from '../BurgerNavigation/BurgerNavigation.js';
 import AuthNavigation from '../AuthNavigation/AuthNavigation.js';
@@ -6,17 +6,15 @@ import Navigation from '../Navigation/Navigation';
 
 function Header({ handleShowNavBar, windowWidth }) {
   const location = useLocation();
-  console.log(windowWidth);
+
   return (
     <header
-      className={
-        location.pathname === '/' ? 'header' : 'header header__type_loggin'
-      }
+      className={location.pathname === '/' ? 'header' : 'header header_loggin'}
     >
-      <div className="header__logo"></div>
+      <Link className="header__logo" to="/"></Link>
       {location.pathname === '/' ? (
         <AuthNavigation />
-      ) : windowWidth >= 1280 ? (
+      ) : windowWidth > 768 ? (
         <Navigation isOpen={true} windowWidth={windowWidth} />
       ) : (
         <BurgerNavigation handleShowNavBar={handleShowNavBar} />

@@ -115,12 +115,13 @@
   }
 
   .promo__text {
+    margin: 0;
     margin-bottom: 146px;
     text-align: start;
     max-width: 310px;
   }
 
   .promo__link {
-    margin-bottom: 0;
+    margin: 0;
   }
 }

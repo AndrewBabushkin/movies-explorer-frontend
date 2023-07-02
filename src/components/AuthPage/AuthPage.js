@@ -4,8 +4,9 @@ import './AuthPage.css';
 
 function AuthPage({ children, nameForm, title, textButton }) {
   return (
-    <div className="auth-page">
-      <div className="auth-page__logo"></div>
+    <section className="auth-page">
+      <Link className="auth-page__logo" to="/"></Link>
+
       <h2 className="auth-page__title">{title}</h2>
       <form className="auth-page__form" name={nameForm}>
         <div className="auth-page__container">
@@ -26,14 +27,10 @@ function AuthPage({ children, nameForm, title, textButton }) {
             <input
               className="auth-page__input auth-page__input_type_invalid "
               type="password"
-            ></input>
-            <label
-              className="auth-page__placeholder"
               minLength="6"
               maxLength="50"
-            >
-              Пароль
-            </label>
+            ></input>
+            <label className="auth-page__placeholder">Пароль</label>
             <label className=" auth-page__placeholder-error auth-page__placeholder-error_type_active">
               Что-то пошло не так...
             </label>
@@ -45,21 +42,21 @@ function AuthPage({ children, nameForm, title, textButton }) {
         </button>
       </form>
       {nameForm === 'registrationForm' ? (
-        <span className="auth-page__link-container">
+        <div className="auth-page__link-container">
           <p className="auth-page__question">Уже зарегистрированы?</p>
           <Link to="/signin" className="auth-form__link">
             Войти
           </Link>
-        </span>
+        </div>
       ) : (
-        <span className="auth-page__link-container">
+        <div className="auth-page__link-container">
           <p className="auth-page__question">Ещё не зарегистрированы?</p>
           <Link to="/signup" className="auth-form__link">
             Регистрация
           </Link>
-        </span>
+        </div>
       )}
-    </div>
+    </section>
   );
 }
 

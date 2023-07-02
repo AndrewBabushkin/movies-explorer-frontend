@@ -11,7 +11,7 @@ function AuthNavigation() {
           </Link>
         </li>
         <li className="auth-navigation__item">
-          <Link className="auth-navigation__link" to="/signin">
+          <Link className="auth-navigation__link auth-navigation__link_type_signin" to="/signin">
             Войти
           </Link>
         </li>

@@ -8,10 +8,18 @@ function Footer() {
       </h2>
       <div className="footer__conteiner">
         <div className="footer__conteiner-links">
-          <a className="footer__link" href="https://practicum.yandex.ru/">
+          <a
+            className="footer__link"
+            href="https://practicum.yandex.ru/"
+            target="_blank"
+          >
             Яндекс.Практикум
           </a>
-          <a className="footer__link" href="https://github.com/AndrewBabushkin">
+          <a
+            className="footer__link"
+            href="https://github.com/AndrewBabushkin"
+            target="_blank"
+          >
             Github
           </a>
         </div>

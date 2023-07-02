@@ -1,7 +1,6 @@
 import './Title.css';
 
 function Title({ title, attribute }) {
-  console.log(attribute);
   return (
     <div className={`conteiner ${attribute}`}>
       <h2 className="conteiner__title">{title}</h2>

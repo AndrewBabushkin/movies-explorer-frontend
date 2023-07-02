@@ -10,7 +10,7 @@ function MoviesCard() {
     <li className="movies-card__item">
       <div className="movies-card__container">
         <h2 className="movies-card__title">В погоне за Бенкси</h2>
-        <time className="movies-card__time">27 минут</time>
+        <p className="movies-card__time">27 минут</p>
       </div>
       <img src={CardAvatar} alt="Обложка фильма" className="movies-card__img" />
       {location.pathname === '/saved-movies' ? (
